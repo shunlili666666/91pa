@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>91啪在线-网址发布-线路检测</title>
@@ -10,16 +11,24 @@
     <meta http-equiv="Expires" content="0">
     <style>
         body,
-        div,p,h2,h1,h3 {
+        div,
+        p,
+        h2,
+        h1,
+        h3 {
             margin: 0;
             padding: 0;
         }
-        html{
+
+        html {
             font-size: 100px;
         }
-        html,body{
+
+        html,
+        body {
             min-width: 320px;
         }
+
         body {
             font-size: .14rem;
             line-height: 1.6;
@@ -32,9 +41,11 @@
             text-decoration: none;
             color: inherit;
         }
-        body{
+
+        body {
             padding: .3rem 0;
         }
+
         .jiance_img {
             display: none;
         }
@@ -51,14 +62,18 @@
             padding: 0 .2rem;
             box-sizing: border-box;
         }
-        .head,.links_wrap{
+
+        .head,
+        .links_wrap {
             width: 100%;
             position: relative;
             padding: .15rem .7rem;
             border: 1px solid #355486;
             box-sizing: border-box;
         }
-        .head::before,.links_wrap::before{
+
+        .head::before,
+        .links_wrap::before {
             content: '';
             display: block;
             position: absolute;
@@ -67,63 +82,113 @@
             bottom: .15rem;
             left: .3rem;
             z-index: -1;
-            background: rgba(48,69,114,.6);
+            background: rgba(48, 69, 114, .6);
         }
-        .head{
+
+        .head {
             margin-bottom: .3rem;
             padding: .5rem .7rem;
             text-align: center;
         }
-        .head h1{
+
+        .head h1 {
             margin-bottom: .1rem;
             font-weight: normal;
             color: yellow;
         }
-        .head p{
+
+        .head p {
             line-height: 2;
             font-size: .18rem;
         }
-        .head p.p1{
+
+        .head p.p1 {
             margin-top: .1rem;
             color: red;
             font-size: .14rem;
         }
-        .links_wrap{
+
+        .links_wrap {
             padding: .3rem .7rem;
+            margin-bottom: .1rem;
         }
-        .links_wrap .box{
+        .links_wrap .links_head{
+            padding: .2rem 0;
+            text-align: center;
+        }
+        .links_wrap .links_head .tit {
+            margin-bottom: .1rem;
+            font-size: .18rem;
+            color: yellow;
+        }
+
+        .links_wrap .links_head .des {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            font-size: .16rem;
+            color: red;
+        }
+
+        .links_wrap .links_head .des::before,
+        .links_wrap .links_head .des::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            display: block;
+            width: .25rem;
+            height: 1px;
+            background: red;
+        }
+
+        .links_wrap .des::before {
+            left: -.16rem;
+            transform: translateX(-100%);
+        }
+
+        .links_wrap .des::after {
+            right: -.16rem;
+            transform: translateX(100%);
+        }
+
+        .links_wrap .box {
             position: relative;
             height: .34rem;
             line-height: .34rem;
             margin: .1rem 0;
         }
+
         .links_wrap .box span,
-        .links_wrap .box a{
+        .links_wrap .box a {
             display: block;
             height: 100%;
             text-align: center;
         }
-        .links_wrap .box .sp1{
+
+        .links_wrap .box .sp1 {
             float: left;
             width: 1rem;
             background: #070e20;
             color: #fff;
         }
-        .links_wrap .box .sp2{
+
+        .links_wrap .box .sp2 {
             position: absolute;
             top: 0;
             left: 1rem;
             right: 1rem;
             background: rgba(0, 0, 0, .2);
         }
-        .links_wrap .box a{
+
+        .links_wrap .box a {
             position: relative;
             float: right;
             width: 1rem;
             background: #1ea6fc;
             color: #fff;
         }
-        .links_wrap .box a::before{
+
+        .links_wrap .box a::before {
             content: '';
             position: absolute;
             top: 0;
@@ -134,67 +199,86 @@
             opacity: 0;
             transition: opacity .3s ease-in;
         }
-        .links_wrap .box a:hover::before{
+
+        .links_wrap .box a:hover::before {
             opacity: 1;
         }
-        .links_wrap .box .bg_green{
+
+        .links_wrap .box .bg_green {
             background: #0ee00e;
         }
-        .links_wrap .box .bg_red{
+
+        .links_wrap .box .bg_red {
             background: red;
         }
-        .links_wrap .box .c_green{
+
+        .links_wrap .box .c_green {
             color: #0ee00e;
         }
-        .links_wrap .box .c_red{
+
+        .links_wrap .box .c_red {
             color: red;
         }
-        @media (max-width:600px){
-        body{
-            padding: .1rem 0;
-        }
-            .center{
+
+        @media (max-width:600px) {
+            body {
+                padding: .1rem 0;
+            }
+
+            .center {
                 padding: 0 .1rem;
             }
-            .head{
-                padding:.3rem;
+
+            .head {
+                padding: .3rem;
             }
-            .head::before, .links_wrap::before{
-                top:.1rem;
+
+            .head::before,
+            .links_wrap::before {
+                top: .1rem;
                 bottom: .1rem;
                 left: .15rem;
                 right: .15rem;
             }
-            .head{
+
+            .head {
                 margin-bottom: .15rem;
             }
-            .head h1{
+
+            .head h1 {
                 font-size: .22rem;
             }
-            .head p{
+
+            .head p {
                 line-height: 1.6;
                 font-size: .14rem;
             }
-            .head p.p1{
+
+            .head p.p1 {
                 font-size: .12rem;
             }
-            .links_wrap{
+
+            .links_wrap {
                 padding: .2rem .3rem;
             }
-            .links_wrap .box{
+
+            .links_wrap .box {
                 height: .3rem;
                 line-height: .3rem;
             }
-            .links_wrap .box .sp1{
+
+            .links_wrap .box .sp1 {
                 width: .6rem;
                 font-size: .12rem;
             }
-            .links_wrap .box .sp2{
+
+            .links_wrap .box .sp2 {
                 left: .6rem;
                 right: .6rem;
                 font-size: .12rem;
             }
-            .links_wrap .box a{
+
+            .links_wrap .box a {
                 width: .6rem;
                 font-size: .12rem;
             }
@@ -219,23 +303,219 @@
             <p class="p1">如果线路检测对您有帮助，请按Ctrl+D收藏</p>
         </div>
         <div class="links_wrap">
+            <div class="links_head">
+                <h2 class="tit">视频一区 -- 富二代</h2>
+                <div class="des">以国产资源为主</div>
+            </div>
             <div class="box">
                 <img class="jiance_img" src="http://www.91pa.site/xianlujiance.png" onerror="imgError()" />
                 <span class="sp1">load...</span>
                 <span class="sp2">http://www.91pa.site/</span>
-                <a href="http://www.91pa.site/">请稍后</a>
+                <a target="_blank" href="http://www.91pa.site/">请稍后</a>
             </div>
             <div class="box">
-                <img class="jiance_img" src="http://www.91pa.space/xianlujiance.png" onerror="imgError()" />
+                <img class="jiance_img" src="http://www.shiwantv.com/xianlujiance.png" onerror="imgError()" />
                 <span class="sp1">load...</span>
-                <span class="sp2">http://www.91pa.space/</span>
-                <a href="http://www.91pa.space/">请稍后</a>
+                <span class="sp2">http://www.shiwantv.com/</span>
+                <a target="_blank" href="http://www.shiwantv.com/">请稍后</a>
             </div>
             <div class="box">
-                <img class="jiance_img" src="http://www.91pa.website/xianlujiance.png" onerror="imgError()" />
+                <img class="jiance_img" src="http://www.gctv.cc/xianlujiance.png" onerror="imgError()" />
                 <span class="sp1">load...</span>
-                <span class="sp2">http://www.91pa.website/</span>
-                <a href="http://www.91pa.website/">请稍后</a>
+                <span class="sp2">http://www.gctv.cc/</span>
+                <a target="_blank" href="http://www.gctv.cc/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.tianxiawuse.com/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.tianxiawuse.com/</span>
+                <a target="_blank" href="http://www.tianxiawuse.com/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.quanse.me/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.quanse.me/</span>
+                <a target="_blank" href="http://www.quanse.me/">请稍后</a>
+            </div>
+        </div>
+        <div class="links_wrap">
+            <div class="links_head">
+                <h2 class="tit">视频二区 -- 字幕网</h2>
+                <p class="des">中文字幕资源为主</p>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.shiwantv.win/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.shiwantv.win/</span>
+                <a target="_blank" href="http://www.shiwantv.win/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.52cha.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.52cha.site/</span>
+                <a target="_blank" href="http://www.52cha.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.69cha.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.69cha.site/</span>
+                <a target="_blank" href="http://www.69cha.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.69sexiaoyi.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.69sexiaoyi.site/</span>
+                <a target="_blank" href="http://www.69sexiaoyi.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.91seluoli.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.91seluoli.site/</span>
+                <a target="_blank" href="http://www.91seluoli.site/">请稍后</a>
+            </div>
+        </div>
+        <div class="links_wrap">
+            <div class="links_head">
+                <h2 class="tit">视频三区 -- 久草</h2>
+                <p class="des">会员资源为主</p>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.shiwantv.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.shiwantv.site/</span>
+                <a target="_blank" href="http://www.shiwantv.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.yingtaoshiping.com/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.yingtaoshiping.com/</span>
+                <a target="_blank" href="http://www.yingtaoshiping.com/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.tianxiawuse.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.tianxiawuse.site/</span>
+                <a target="_blank" href="http://www.tianxiawuse.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.quanse.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.quanse.site/</span>
+                <a target="_blank" href="http://www.quanse.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.8lbook.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.8lbook.site/</span>
+                <a target="_blank" href="http://www.8lbook.site/">请稍后</a>
+            </div>
+        </div>
+        <div class="links_wrap">
+            <div class="links_head">
+                <h2 class="tit">视频四区 -- 利来</h2>
+                <p class="des">推出无水印资源</p>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.gctv.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.gctv.site/</span>
+                <a target="_blank" href="http://www.gctv.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.touxihua.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.touxihua.site/</span>
+                <a target="_blank" href="http://www.touxihua.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.toujipin.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.toujipin.site/</span>
+                <a target="_blank" href="http://www.toujipin.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.tourenqi.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.tourenqi.site/</span>
+                <a target="_blank" href="http://www.tourenqi.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.yabiaomei.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.yabiaomei.site/</span>
+                <a target="_blank" href="http://www.yabiaomei.site/">请稍后</a>
+            </div>
+        </div>
+        <div class="links_wrap">
+            <div class="links_head">
+                <h2 class="tit">视频五区 -- 撸死你</h2>
+                <p class="des">猎奇资源为主</p>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.shiwantv.top/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.shiwantv.top/</span>
+                <a target="_blank" href="http://www.shiwantv.top/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.shiwantv.me/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.shiwantv.me/</span>
+                <a target="_blank" href="http://www.shiwantv.me/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.caoguafu.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.caoguafu.site/</span>
+                <a target="_blank" href="http://www.caoguafu.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.caoluoli.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.caoluoli.site/</span>
+                <a target="_blank" href="http://www.caoluoli.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.sebiaomei.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.sebiaomei.site/</span>
+                <a target="_blank" href="http://www.sebiaomei.site/">请稍后</a>
+            </div>
+        </div>
+        <div class="links_wrap">
+            <div class="links_head">
+                <h2 class="tit">视频六区 -- 博天堂</h2>
+                <p class="des">伦理三级资源为主</p>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.shiwantv.xyz/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.shiwantv.xyz/</span>
+                <a target="_blank" href="http://www.shiwantv.xyz/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.serenqi.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.serenqi.site/</span>
+                <a target="_blank" href="http://www.serenqi.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.chamimei.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.chamimei.site/</span>
+                <a target="_blank" href="http://www.chamimei.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.chameizi.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.chameizi.site/</span>
+                <a target="_blank" href="http://www.chameizi.site/">请稍后</a>
+            </div>
+            <div class="box">
+                <img class="jiance_img" src="http://www.chaxiaohua.site/xianlujiance.png" onerror="imgError()" />
+                <span class="sp1">load...</span>
+                <span class="sp2">http://www.chaxiaohua.site/</span>
+                <a target="_blank" href="http://www.chaxiaohua.site/">请稍后</a>
             </div>
         </div>
     </div>
@@ -254,12 +534,14 @@
                     $(this).siblings('a').html('已失效');
                     $(this).siblings('span').addClass('c_red');
                     $(this).siblings('a').addClass('bg_red');
-                    $(this).siblings('a').attr('href','javascript:;');
+                    $(this).siblings('a').attr('href', 'javascript:;');
                 }
             })
         }
     </script>
-    <div style="width: 0;height:0; overflow:hidden"><script type="text/javascript" src="https://s5.cnzz.com/z_stat.php?id=1277813357&web_id=1277813357"></script></div>
+    <div style="width: 0;height:0; overflow:hidden">
+        <script type="text/javascript" src="https://s5.cnzz.com/z_stat.php?id=1277813357&web_id=1277813357"></script>
+    </div>
 </body>
 
 </html>
